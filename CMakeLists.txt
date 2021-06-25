@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0.2)
 project(baxter_pykdl)
 
 find_package(catkin
@@ -19,12 +19,10 @@ catkin_package(
   rospy
   geometry_msgs
   sensor_msgs
-  urdfdom
   tf
   baxter_interface
   baxter_core_msgs
   DEPENDS
-  python_orocos_kdl
   urdfdom
 )
 
